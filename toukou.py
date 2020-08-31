@@ -1,3 +1,4 @@
+import os
 import psycopg2
 
 class Toukou:
@@ -12,7 +13,8 @@ class ToukouDB:
         user = 'postgres'
         passwd = 'root'
 
-        dsn = f"postgresql://{user}:{passwd}@localhost:5432/bbs"
+        dsn = os.environ.get('DATABASE_URL') or "postgresql://localhost/bbspg"
+        #dsn = f"postgresql://{user}:{passwd}@localhost:5432/bbs"
         self.con = psycopg2.connect(dsn=dsn)
 
         self.cur = self.con.cursor()
