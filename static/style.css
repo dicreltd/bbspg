@@ -1,0 +1,47 @@
+body {
+    margin:0;
+    padding:0 10%;
+}
+header{
+    padding:1em;
+    background-color: cornflowerblue;
+}
+h1 {
+    color:white;
+}
+.toukou{
+    padding:1em;
+}
+.toukou-info{
+    display: flex;
+    justify-content: space-between;
+}
+.toukou-name {
+    font-weight: bold;
+}
+.toukou-hi {
+    font-style:italic;
+}
+.toukou-body {
+    border:1px solid cornflowerblue;
+    padding:1em;
+    border-radius: 0.5em;
+}
+#toukou-form {
+    width: 30em;
+    max-width: 100%;
+    margin: 0 auto;
+    padding:0.2em;
+}
+
+#toukou-form input, #toukou-form textarea{
+    width: 100%;
+    border:1px solid gray;
+    padding:0.5em;
+    border-radius: 0.2em;
+    margin-bottom:0.2em;
+    box-sizing: border-box;
+}
+div.submit{
+    text-align: center;
+}
